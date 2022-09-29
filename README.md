@@ -1,2 +1,2 @@
 # MVP-Example
-MVP Example from The Swift Developer
+MVP Example from The Swift Developers
