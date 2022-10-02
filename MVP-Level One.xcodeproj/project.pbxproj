@@ -11,6 +11,7 @@
 		4D38D72228E605B700740151 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38D72128E605B700740151 /* DetailPresenter.swift */; };
 		4D38D72928E608C100740151 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38D72728E608C100740151 /* DetailViewController.swift */; };
 		4D38D72A28E608C100740151 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D38D72828E608C100740151 /* DetailViewController.xib */; };
+		4D7C003228E9F4DF00C520FF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C003128E9F4DF00C520FF /* Router.swift */; };
 		4D896D0F28E34B4500596EFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D0E28E34B4500596EFF /* AppDelegate.swift */; };
 		4D896D1128E34B4500596EFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D1028E34B4500596EFF /* SceneDelegate.swift */; };
 		4D896D1328E34B4500596EFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D1228E34B4500596EFF /* MainViewController.swift */; };
@@ -23,7 +24,7 @@
 		4D896D3F28E34B7200596EFF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D3E28E34B7200596EFF /* Comment.swift */; };
 		4D896D4128E34BB800596EFF /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D4028E34BB800596EFF /* MainPresenter.swift */; };
 		4D896D4728E350AB00596EFF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D896D4628E350AB00596EFF /* MainViewController.xib */; };
-		4D896D4928E3523900596EFF /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D4828E3523900596EFF /* ModuleBuilder.swift */; };
+		4D896D4928E3523900596EFF /* AssemblyModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D4828E3523900596EFF /* AssemblyModelBuilder.swift */; };
 		4D896D4E28E3591200596EFF /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D896D4D28E3591200596EFF /* MainPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		4D38D72128E605B700740151 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		4D38D72728E608C100740151 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4D38D72828E608C100740151 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		4D7C003128E9F4DF00C520FF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4D896D0B28E34B4500596EFF /* MVP-Level One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-Level One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D896D0E28E34B4500596EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D896D1028E34B4500596EFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +67,7 @@
 		4D896D3E28E34B7200596EFF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		4D896D4028E34BB800596EFF /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		4D896D4628E350AB00596EFF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		4D896D4828E3523900596EFF /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		4D896D4828E3523900596EFF /* AssemblyModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModelBuilder.swift; sourceTree = "<group>"; };
 		4D896D4D28E3591200596EFF /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,7 +163,8 @@
 			children = (
 				4D896D0E28E34B4500596EFF /* AppDelegate.swift */,
 				4D896D1028E34B4500596EFF /* SceneDelegate.swift */,
-				4D896D4828E3523900596EFF /* ModuleBuilder.swift */,
+				4D896D4828E3523900596EFF /* AssemblyModelBuilder.swift */,
+				4D7C003128E9F4DF00C520FF /* Router.swift */,
 				4D38D72428E6085E00740151 /* DetailModule */,
 				4D896D4228E3501400596EFF /* MainModule */,
 				4D38D72028E5F35E00740151 /* ServiceLayer */,
@@ -369,12 +372,13 @@
 			files = (
 				4D38D72928E608C100740151 /* DetailViewController.swift in Sources */,
 				4D896D4128E34BB800596EFF /* MainPresenter.swift in Sources */,
+				4D7C003228E9F4DF00C520FF /* Router.swift in Sources */,
 				4D896D1328E34B4500596EFF /* MainViewController.swift in Sources */,
 				4D896D0F28E34B4500596EFF /* AppDelegate.swift in Sources */,
 				4D38D72228E605B700740151 /* DetailPresenter.swift in Sources */,
 				4D896D3F28E34B7200596EFF /* Comment.swift in Sources */,
 				4D896D1128E34B4500596EFF /* SceneDelegate.swift in Sources */,
-				4D896D4928E3523900596EFF /* ModuleBuilder.swift in Sources */,
+				4D896D4928E3523900596EFF /* AssemblyModelBuilder.swift in Sources */,
 				4D38D71F28E5F35200740151 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

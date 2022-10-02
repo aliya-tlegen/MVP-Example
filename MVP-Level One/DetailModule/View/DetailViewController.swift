@@ -15,10 +15,14 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         presenter.setComment()
     }
-
+    
+    @IBAction func tapAction(_ sender: Any) {
+        presenter.tap()
+    }
+    
+    
 }
 
 extension DetailViewController: DetailViewProtocol {
